@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="timer">Time:<span id="time">0</span>
+    </div>
+        
+      <div class="start-screen" id="start-screen">
+        <h1>Coding Quiz Challenge</h1>
+        <p>Try to answer the following questions</p>
+        <button class="start-quiz" id="start-button">Start Quiz</button>
+      </div>
+
+      <div id="questions" class="hide">
+        <h2 class="question-title" id="question-title">Question 1</h2>
+        <div class="answer-choices" id="answer-choices"></div>
+      </div>
+
+      <div id="endscreen" class="hide">
+        <h1>All Done</h1>
+        <!-- //manipulate span id with js to calculate the score based on time left. -->
+        <p>Your final score is: <span id="final-score"></span></p>
+        <p>
+          Enter initials<input type="text" id="initials" />
+          <button id="submit">Submit</button>
+        </p>
+      </div>
+
+    </div>
+
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/logic.js"></script>
+  </body>
+</html>
